@@ -5,87 +5,95 @@
     <title>Заказ товара</title>
 </head>
 <body>
-    <table border="0" cellpadding="5" cellspacing="0" width="100%">
-        <tr bgcolor="C19A65">
-            <td colspan="1" height="150">
-               <img src="images/cat2.jpg" title="Барсик" width="250">
-            </td>
-            <td colspan="2">
-                <h1 align="center" style="color:rebeccapurple;">Заказ товара</h1>
-            </td>
-        </tr>
-        <tr>
-            <td bgcolor="C7A374" width="250" valign="top">
-                <div id="menu">
-                    <h3>Меню</h3>
-                    <ul style="color:rebeccapurple;">
-                        <li><a href="index.html"><i>На главную</i></a></li>
-                        <li><a href="about.html"><i>Описание компании</i></a></li>
-                        <li><a href="articl.html"><i>Статьи</i></a></li>
-                        <li><a href="breed.html"><i>Порода</i></a></li>
-                        <li><a href="rare.html"><i>Редкие</i></a></li>
-                        <li><a href="care.html"><i>Уход</i></a></li>
-                        <li><a href="competition.html"><i>Конкурс</i></a></li>
-                        <li><a href="contacts.html"><i>Контакты</i></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <img src="images/tovar.jpg" title="Витрина товаров" height="100"/>
-                </div>
-            </td>
-            <td bgcolor="C7A374" height="500" valign="top">
-                <div>
-                    <h2 style="color: rebeccapurple"><i>Сделать заказ</i></h2>
-                    <form>
-                        <input type="text" size="39" required name="firstname" placeholder="Введите ваше имя"/><font color="red">*</font><br>
-                        <br>
-                        <input type="email" size="39" required name="e-mail" placeholder="Введите ваш e-mail"/><font color="red">*</font><br>
-                        <br>
-                        <input type="text" size="39" required name="phone" placeholder="Введите ваш телефон"/><font color="red">*</font><br>
-                        <br>
-                        <input type="text" size="39" required name="adres" placeholder="Введите адрес доставки: индекс, регион, город, дом."/><font color="red">*</font><br>
-                        <br>
-                        <label>Выбрать товар</label><br>
-                        <select name="order_payment">
-                            <option value="email" selected="selected"></option>
-                            <option value="email" selected="selected">Опт</option>
-                            <option value="robokassa">Розница</option>
-                        </select>
-                        <br>
-                        <br>
-                        <textarea rows="5" cols="40" required placeholder="Ваши пожелания"></textarea><font color="red">*</font>
-                        <br>
+<table border="0" cellpadding="5" cellspacing="0" width="100%">
+    <tr bgcolor="C19A65">
+        <td colspan="1" height="150">
+            <img src="images/cat2.jpg" title="Барсик" height="200">
+        </td>
+        <td colspan="2">
+            <h1 align="center" style="color:rebeccapurple;">Заказ товара</h1>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="C7A374" width="250" valign="top">
+            <div id="menu">
+                <h3>Меню</h3>
+                <ul style="color:rebeccapurple;">
+                    <li><a href="index.html"><i>На главную</i></a></li>
+                    <li><a href="about.html"><i>Описание компании</i></a></li>
+                    <li><a href="articl.html"><i>Статьи</i></a></li>
+                    <li><a href="breed.html"><i>Порода</i></a></li>
+                    <li><a href="rare.html"><i>Редкие</i></a></li>
+                    <li><a href="care.html"><i>Уход</i></a></li>
+                    <li><a href="competition.html"><i>Конкурс</i></a></li>
+                    <li><a href="to_order.html"><i>Заказ товара</i></a> </li>
+                    <li><a href="contacts.html"><i>Контакты</i></a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="images/tovar.jpg" title="Витрина товаров" height="100"/>
+            </div>
+        </td>
+        <td bgcolor="C7A374" height="500" valign="top">
+            <div>
+                <h2 style="color: rebeccapurple"><i>Сделать заказ</i></h2>
+                <form>
+                    <input type="text" size="39" required name="firstname" placeholder="Введите ваше имя"/>
+                    <font color="red">*</font><br/>
+                    <br/>
+                    <input type="email" size="39" required name="e-mail" placeholder="Введите ваш e-mail"/>
+                    <font color="red">*</font><br/>
+                    <br/>
+                    <input type="text" size="39" required name="phone" placeholder="Введите ваш телефон"/>
+                    <font color="red">*</font><br/>
+                    <br/>
+                    <input type="text" size="39" required name="adres"
+                           placeholder="Введите адрес доставки: индекс, регион, город, дом."/><font color="red">*</font><br/>
+                    <!--<br/>
+                    <label>Выбрать товар</label><br/>
+                    <select name="order_payment">
+                        <option value="email" selected="selected"></option>
+                        <option value="email" selected="selected">Опт</option>
+                        <option value="robokassa">Розница</option>
+                    </select>
+                    <br/>-->
+                    <br/>
+                    <textarea rows="5" cols="40" required placeholder="Выберите товар"></textarea><font
+                        color="red">*</font>
+                    <br/>
 
 
-                        <input type="checkbox" required name="license" value="Согласен"/> <i>Согласен с обработкой персональных данных<font color="red">*</font> </i><br>
-                        <input type="checkbox" name="advertisment" value="Согласен"/> <i>Я хочу получать новостные рассылки</i><br>
-                        <br>
-                        <input type="submit" value="Отправить"> &nbsp;
-                        <input type="reset" value="Очистить">
+                    <label><input type="checkbox" required name="license" value="Согласен"/>
+                        <i>Согласен с обработкой персональных данных<font color="red">*</font> </i></label><br>
+                    <label><input type="checkbox" name="advertisment" value="Согласен"/><i>Я хочу получать новостные
+                    рассылки</i></label><br>
+                    <br/>
+                    <input type="submit" value="Отправить"> &nbsp;
+                    <input type="reset" value="Очистить">
 
-                    </form>
-                </div>
-            </td>
-        </tr>
-        <tr bgcolor="C19A65">
-            <td height="100" colspan="1" align="center">
-                <font color="#fff" size="4">
-                    <b><i>
-                        Phone: +7-905-550-45-45<br><br>
-                        E-mail: manpvla@gmail.com</i>
-                    </b>
-                </font>
-            </td>
-            <td colspan="2">
-                <font color="#fff" size="4">
-                    <b><i>
-                        Moscow, Pervomayskaya St., 20.<br><br>
-                        Business hours: 8:00 - 17:00 daily without interruption for lunch</i>
-                    </b>
-                </font>
-            </td>
-        </tr>
-    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+    <tr bgcolor="C19A65">
+        <td height="100" colspan="1" align="center">
+            <font color="#fff" size="4">
+                <b><i>
+                    Phone: +7-905-550-45-45<br><br>
+                    E-mail: manpvla@gmail.com</i>
+                </b>
+            </font>
+        </td>
+        <td colspan="2">
+            <font color="#fff" size="4">
+                <b><i>
+                    Moscow, Pervomayskaya St., 20.<br><br>
+                    Business hours: 8:00 - 17:00 daily without interruption for lunch</i>
+                </b>
+            </font>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
