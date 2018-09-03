@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Заказ товара</title>
+    <style type="text/css">
+        body {
+            background-color: #d2b48c;
+            font-size: 14pt;
+            font-family: sans-serif;
+        }
+        h1 {
+           text-align: center;
+            color: rebeccapurple;
+        }
+        .”red-asterix”{color: red}
+    </style>
 </head>
 <body>
 <table border="0" cellpadding="5" cellspacing="0" width="100%">
     <tr bgcolor="C19A65">
         <td colspan="1" height="150">
-            <img src="images/cat2.jpg" title="Барсик" height="200">
+            <img src="images/cat2.jpg" title="Барсик" height="200" alt="foto">
         </td>
         <td colspan="2">
-            <h1 align="center" style="color:rebeccapurple;">Заказ товара</h1>
+            <h1>Заказ товара</h1>
         </td>
     </tr>
     <tr>
-        <td bgcolor="C7A374" width="250" valign="top">
+        <td bgcolor="#d2b48c" width="250" valign="top">
             <div id="menu">
                 <h3>Меню</h3>
                 <ul style="color:rebeccapurple;">
@@ -31,24 +43,28 @@
                 </ul>
             </div>
             <div>
-                <img src="images/tovar.jpg" title="Витрина товаров" height="100"/>
+                <img src="images/tovar.jpg" title="Витрина товаров" height="100" alt="foto"/>
             </div>
         </td>
-        <td bgcolor="C7A374" height="500" valign="top">
+        <td bgcolor="#d2b48c" height="500" valign="top">
             <div>
                 <h2 style="color: rebeccapurple"><i>Сделать заказ</i></h2>
                 <form>
                     <input type="text" size="39" required name="firstname" placeholder="Введите ваше имя"/>
-                    <font color="red">*</font><br/>
+                    <span class=”red-asterix”>*</span>
+                    <br/>
                     <br/>
                     <input type="email" size="39" required name="e-mail" placeholder="Введите ваш e-mail"/>
-                    <font color="red">*</font><br/>
+                    <span class=”red-asterix”>*</span>
+                    <br/>
                     <br/>
                     <input type="text" size="39" required name="phone" placeholder="Введите ваш телефон"/>
-                    <font color="red">*</font><br/>
+                    <span class=”red-asterix”>*</span>
                     <br/>
-                    <input type="text" size="39" required name="adres"
-                           placeholder="Введите адрес доставки: индекс, регион, город, дом."/><font color="red">*</font><br/>
+                    <br/>
+                    <input type="text" size="39" required name="adres" placeholder="Введите адрес доставки: индекс, регион, город, дом."/>
+                    <span class=”red-asterix”>*</span>
+                    <br/>
                     <!--<br/>
                     <label>Выбрать товар</label><br/>
                     <select name="order_payment">
@@ -58,15 +74,17 @@
                     </select>
                     <br/>-->
                     <br/>
-                    <textarea rows="5" cols="40" required placeholder="Выберите товар"></textarea><font
-                        color="red">*</font>
+                    <textarea rows="5" cols="40" required placeholder="Выберите товар"></textarea>
+                    <span class=”red-asterix”>*</span>
                     <br/>
 
 
                     <label><input type="checkbox" required name="license" value="Согласен"/>
-                        <i>Согласен с обработкой персональных данных<font color="red">*</font> </i></label><br>
+                        <i>Согласен с обработкой персональных данных<span class=”red-asterix”>*</span></i>
+                    </label><br>
                     <label><input type="checkbox" name="advertisment" value="Согласен"/><i>Я хочу получать новостные
-                    рассылки</i></label><br>
+                    рассылки</i>
+                    </label><br>
                     <br/>
                     <input type="submit" value="Отправить"> &nbsp;
                     <input type="reset" value="Очистить">
@@ -77,20 +95,20 @@
     </tr>
     <tr bgcolor="C19A65">
         <td height="100" colspan="1" align="center">
-            <font color="#fff" size="4">
+            <div class="phonem" style="color: #fff">
                 <b><i>
                     Phone: +7-905-550-45-45<br><br>
                     E-mail: manpvla@gmail.com</i>
                 </b>
-            </font>
+            </div>
         </td>
         <td colspan="2">
-            <font color="#fff" size="4">
+            <div class="adres" style="color: #fff">
                 <b><i>
                     Moscow, Pervomayskaya St., 20.<br><br>
                     Business hours: 8:00 - 17:00 daily without interruption for lunch</i>
                 </b>
-            </font>
+            </div>
         </td>
     </tr>
 </table>
