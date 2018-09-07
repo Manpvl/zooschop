@@ -9,6 +9,7 @@
             <!-- border: 2 px dotted black;-->
             padding: 10px 10px 10px 10px;
             font-family: sans-serif;
+            color: #5d5d5d;
             font-size: 14pt;
         }
         h1 {
@@ -16,6 +17,26 @@
             color: rebeccapurple;
         }
         .”red-asterix” {color: red}
+        h3 {
+            font-style: italic;
+            color: rebeccapurple;
+        }
+        .menu {
+            font-style: italic;
+            color: rebeccapurple;
+        }
+        .phonem, .adres {
+            font-style: italic;
+            font-weight: bolder;
+            color: #fff;
+        }
+        .contacts {
+            font-style: italic;
+        }
+        dt {
+            font-weight: bolder;
+            color: rebeccapurple;
+        }
     </style>
 </head>
 <body>
@@ -34,51 +55,51 @@
         <td bgcolor="C7A374" width="250" valign="top">
             <div id="menu">
                 <h3>Меню</h3>
-                <ul style="color:rebeccapurple;">
-                    <li><a href="index.html"><i>На главную</i></a></li>
-                    <li><a href="about.html"><i>Описание компании</i></a></li>
-                    <li><a href="articl.html"><i>Статьи</i></a></li>
-                    <li><a href="breed.html"><i>Порода</i></a></li>
-                    <li><a href="rare.html"><i>Редкие</i></a></li>
-                    <li><a href="care.html"><i>Уход</i></a></li>
-                    <li><a href="competition.html"><i>Конкурс</i></a></li>
-                    <li><a href="to_order.html"><i>Заказ товара</i></a></li>
-                    <li><a href="contacts.html"><i><b>Контакты</b></i></a></li>
+                <ul class="menu">
+                    <li><a href="index.html">На главную</a></li>
+                    <li><a href="about.html">Описание компании</a></li>
+                    <li><a href="articl.html">Статьи</a></li>
+                    <li><a href="breed.html">Порода</a></li>
+                    <li><a href="rare.html">Редкие</a></li>
+                    <li><a href="care.html">Уход</a></li>
+                    <li><a href="competition.html">Конкурс</a></li>
+                    <li><a href="to_order.html">Заказ товара</a></li>
+                    <li><a href="contacts.html"><b>Контакты</b></a></li>
                 </ul>
             </div>
-            <div id="whiskas">
+            <div id="myau2">
                 <img src="images/myau2.jpg" title="Мяу" height="100" alt="foto">
             </div>
         </td>
         <td height="500" valign="top">
-            <div>
+            <div class="contacts">
                 <blockquote>
                     <dl>
-                        <dt style="color: rebeccapurple"><b><i>Адрес</i></b></dt>
+                        <dt>Адрес</dt>
                         <dd>
-                            <i>г. Москва, ул. Первомайская, д. 20.</i>
+                            г. Москва, ул. Первомайская, д. 20.
                             <br/>
                             <br/>
                         </dd>
 
-                        <dt style="color: rebeccapurple"><b><i>E-mail</i></b></dt>
+                        <dt>E-mail</dt>
                         <dd>
-                            <i>manpvla@gmail.com</i>
+                            manpvla@gmail.com
                             <br/>
                             <br/>
                         </dd>
 
-                        <dt style="color: rebeccapurple"><b><i>Телефон</i></b></dt>
+                        <dt>Телефон</dt>
                         <dd>
-                            <i>Городской: +7(495)805-90-90</i><br/>
-                            <i>Сотовый: +7-905-550-45-45</i>
+                            Городской: +7(495)805-90-90<br/>
+                            Сотовый: +7-905-550-45-45
                             <br/>
                             <br/>
                         </dd>
 
-                        <dt style="color: rebeccapurple"><b><i>Часы работы</i></b></dt>
+                        <dt>Часы работы</dt>
                         <dd>
-                            <i>8:00 - 17:00 ежедневно без выходных и перерыва на обед</i>
+                            8:00 - 17:00 ежедневно без выходных и перерыва на обед
                             <br/>
                             <br/>
                         </dd>
@@ -86,7 +107,7 @@
                 </blockquote>
             </div>
             <div>
-                <h3 style="color: rebeccapurple">Обратная связь</h3>
+                <h3>Обратная связь</h3>
                 <form>
                     <input type="text" size="39" required name="firstname" placeholder="Введите ваше имя"/>
                     <span class=”red-asterix”>*</span>
@@ -111,19 +132,19 @@
     </tr>
     <tr bgcolor="C19A65">
         <td height="100" colspan="1" align="center">
-            <div class="phonem" style="color: #fff">
-                <b><i>
+            <div class="phonem">
+
                     Phone: +7-905-550-45-45<br><br>
-                    E-mail: manpvla@gmail.com</i>
-                </b>
+                    E-mail: manpvla@gmail.com
+
             </div>
         </td>
         <td colspan="2">
-            <div class="adres" style="color: #fff">
-                <b><i>
+            <div class="adres">
+
                     Moscow, Pervomayskaya St., 20.<br><br>
-                    Business hours: 8:00 - 17:00 daily without interruption for lunch</i>
-                </b>
+                    Business hours: 8:00 - 17:00 daily without interruption for lunch
+
             </div>
         </td>
     </tr>
